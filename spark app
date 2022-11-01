@@ -1,0 +1,15 @@
+#!/bin/bash
+
+export SPARK_MASTER_URL=spark://spark-master:7077
+export SPARK_HOME=/spark
+
+
+echo "Submit application to Spark master ${SPARK_MASTER_URL}"
+
+
+# Start PySparkShell:
+# /spark/bin/pyspark --master spark://spark-master:7077
+
+# Check conf file for hadoop namenode : /etc/hadoop/core-site.xml > "fs defult fs" = hdfs://namenode:9000
+lines = spark.read.text("hdfs://namenode:9000/input/data.csv")
+lines.show()
