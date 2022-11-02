@@ -1,2 +1,3 @@
 hadoop_namenode/
 .DS_STORE
+*.log

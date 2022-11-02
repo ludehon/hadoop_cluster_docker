@@ -21,4 +21,4 @@ services:
 networks:
   default:
     external:
-      name: mynet
+      name: hadoop_net
