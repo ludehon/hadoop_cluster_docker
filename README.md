@@ -5,6 +5,7 @@ Spark cluster type is standalone.
 ## Quick Start
 Build images :
 > build_all.sh
+
 Launch containers
 > launch_cluster.sh
 
