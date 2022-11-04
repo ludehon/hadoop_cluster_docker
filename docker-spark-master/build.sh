@@ -18,13 +18,13 @@ if [ $# -eq 0 ]
     build base
     build master
     build worker
-    build history-server
-    build submit
-    build maven-template template/maven
-    build sbt-template template/sbt
-    build python-template template/python
+    #build history-server
+    #build submit
+    #build maven-template template/maven
+    #build sbt-template template/sbt
+    #build python-template template/python
     
-    build python-example examples/python
+    #build python-example examples/python
   else
     build $1 $2
 fi
